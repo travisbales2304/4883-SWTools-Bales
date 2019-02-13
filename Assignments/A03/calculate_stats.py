@@ -1,34 +1,54 @@
-
 import json
 import os
 import sys
 from pprint import pprint
 
 def MostTeams():
-    pass
+    f = open('Teamdata.txt','r')
+    data = f.read()
+    print(data)
 def MostTeamsYR():
     pass
 def MostYrdsRushedForLoss():
-    pass
+    f = open('RushDataLoss.txt','r')
+    data = f.read()
+    print(data)
 def MostRushesForLoss():
-    pass
+    f = open('RushDataLosstimes.txt','r')
+    data = f.read()
+    print(data)
 def MostPassesForLoss():
-    pass
+    f = open('PassLosstimes.txt','r')
+    data = f.read()
+    print(data)
 def TeamMostPenalties():
-    pass
+    f = open('TeamPens.txt','r')
+    data = f.read()
+    print(data)
 def TeamMostYrdsPenalties():
-    pass
+    f = open('TeamPenyards.txt','r')
+    data = f.read()
+    print(data)
 def AvgPlaysPerGame():
-    pass
+    f = open('AvgDrives.txt','r')
+    data = f.read()
+    print(data)
 def LongestFG():
-    pass
+    f = open('FGPR.txt','r')
+    data = f.read()
+    print(data)
 def MostFG():
-    pass
+    f = open('FG.txt','r')
+    data = f.read()
+    print(data)
 def MostFailedFG():
-    pass
+    f = open('FGF.txt','r')
+    data = f.read()
+    print(data)
 def MostDroppedPasses():
-    pass
-
+    f = open('FP.txt','r')
+    data = f.read()
+    print(data)
 
 
 

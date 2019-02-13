@@ -47,7 +47,7 @@ def openFileJson(file):
 def MostTeams():
     playerdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -95,7 +95,7 @@ def MostTeamsYR():
 def MostYrdsRushedForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -134,7 +134,7 @@ def MostYrdsRushedForLoss():
 def MostRushesForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -173,7 +173,7 @@ def MostRushesForLoss():
 def MostPassesForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -212,7 +212,7 @@ def MostPassesForLoss():
 def TeamMostPenalties():
     Team = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -255,7 +255,7 @@ def TeamMostPenalties():
 def TeamMostYrdsPenalties():
     Team = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -298,7 +298,7 @@ def TeamMostYrdsPenalties():
 #    it prints the number of plays per game divided by the amount of games
 def AvgPlaysPerGame():
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -329,7 +329,7 @@ def AvgPlaysPerGame():
 def LongestFG():
     FGdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -373,7 +373,7 @@ def LongestFG():
 def MostFG():
     FGdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -414,7 +414,7 @@ def MostFG():
 def MostFailedFG():
     FGdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -455,7 +455,7 @@ def MostFailedFG():
 def MostDroppedPasses():
     FGdata = {}
     list1 = []
-    for x in range(2018,2019):
+    for x in range(2009,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')

@@ -47,7 +47,7 @@ def openFileJson(file):
 def MostTeams():
     playerdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -77,7 +77,7 @@ def MostTeams():
                     mostteams = k
 
     total = mostteams + " " + str(numberofmost)
-    print(total)
+    print(total + " teams")
 ##############################################################
 # MostTeamsYR()
 # This function goes through all the information in the json file
@@ -95,7 +95,7 @@ def MostTeamsYR():
 def MostYrdsRushedForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -124,7 +124,7 @@ def MostYrdsRushedForLoss():
                 mostteams = k
                 numberofmost = x
     total = mostteams + " " + str(numberofmost)
-    print(total)
+    print(total + " Yards Rushed for loss")
 ##############################################################
 # MostRushesForLoss()
 # This function goes through all the information in the json file
@@ -134,7 +134,7 @@ def MostYrdsRushedForLoss():
 def MostRushesForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -163,7 +163,7 @@ def MostRushesForLoss():
                 mostteams = k
                 numberofmost = x
     total = mostteams + " " + str(numberofmost)
-    print(total)
+    print(total +" Times rushed for a loss")
 ##############################################################
 # MostPassesForLoss()
 # This function goes through all the information in the json file
@@ -173,7 +173,7 @@ def MostRushesForLoss():
 def MostPassesForLoss():
     playerdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -202,7 +202,7 @@ def MostPassesForLoss():
                 mostteams = k
                 numberofmost = x
     total = mostteams + " " + str(numberofmost)
-    print(total)
+    print(total +" Times passed for a loss")
 ##############################################################
 # TeamMostPenalties()
 # This function goes through all the information in the json file
@@ -212,7 +212,7 @@ def MostPassesForLoss():
 def TeamMostPenalties():
     Team = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -245,7 +245,7 @@ def TeamMostPenalties():
             Teamname = k
 
     total = Teamname + ' ' + str(TeamPens)
-    print(total)
+    print(total + " penalties")
 ##############################################################
 # TeamMostYrdsPenalties()
 # This function goes through all the information in the json file
@@ -255,7 +255,7 @@ def TeamMostPenalties():
 def TeamMostYrdsPenalties():
     Team = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -289,7 +289,7 @@ def TeamMostYrdsPenalties():
             Teamname = k
 
     total = Teamname + ' ' + str(TeamPens)
-    print(total)
+    print(total + " Yards lost in penalties")
 ##############################################################
 # AvgPlaysPerGame()
 # This function goes through all the information in the json file
@@ -298,7 +298,7 @@ def TeamMostYrdsPenalties():
 #    it prints the number of plays per game divided by the amount of games
 def AvgPlaysPerGame():
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -319,7 +319,7 @@ def AvgPlaysPerGame():
 
 
     total = drivenumber // len(list1)
-    print(total)
+    print(str(total) + " Average plays a game")
 ##############################################################
 # LongestFG()
 # This function goes through all the information in the json file
@@ -329,7 +329,7 @@ def AvgPlaysPerGame():
 def LongestFG():
     FGdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -339,7 +339,7 @@ def LongestFG():
         data = openFileJson(list1[x])
         for gameid,gamedata in data.items():
                 if gameid != "nextupdate":
-                    print(gameid)
+                    #print(gameid)
                     # go straight for the drives
                     for driveid,drivedata in gamedata['drives'].items():
                         if driveid != 'crntdrv':
@@ -363,7 +363,7 @@ def LongestFG():
                 name = k
                 FieldGoalPersonalRecord = x
     total = name + ' ' + str(FieldGoalPersonalRecord) 
-    print(total)
+    print(total + " Yard Field goal Personal Best")
 ##############################################################
 # MostFG()
 # This function goes through all the information in the json file
@@ -373,7 +373,7 @@ def LongestFG():
 def MostFG():
     FGdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -404,7 +404,7 @@ def MostFG():
                 name = k
                 FieldGoals = x
     total = name + ' ' + str(FieldGoals) 
-    print(total)
+    print(total + " Field Goals made")
 ##############################################################
 # MostFailedFG()
 # This function goes through all the information in the json file
@@ -414,7 +414,7 @@ def MostFG():
 def MostFailedFG():
     FGdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -445,7 +445,7 @@ def MostFailedFG():
                 name = k
                 FieldGoalF = x
     total = name + ' ' + str(FieldGoalF) 
-    print(total)
+    print(total + " Field Goals missed")
 ##############################################################
 # MostDroppedPasses()
 # This function goes through all the information in the json file
@@ -455,7 +455,7 @@ def MostFailedFG():
 def MostDroppedPasses():
     FGdata = {}
     list1 = []
-    for x in range(2009,2019):
+    for x in range(2018,2019):
         f = open("REG %s.txt"%(str(x)),"r")
         for line in f:
             id = line.strip('\n')
@@ -486,7 +486,7 @@ def MostDroppedPasses():
                 name = k
                 FailedPass = x
     total = name + ' ' + str(FailedPass) 
-    print(total)
+    print(total + " Passes dropped by receiver")
 
 
 
@@ -495,53 +495,72 @@ print('Name: Travis Bales \nAssignment: A03 - Nfl Stats \nDate: 2/12/2019\n\n')
 
 print('Find the player(s) that played for the most teams.\nAnswer:\n')
 #anser to question
-MostTeams()
+MostTeams() 
+
 print('\n\n')
 
 print('Find the player(s) that played for multiple teams in one year.\nAnswer:\n')
 #anser to question
+
 print('\n\n')
 
 print('Find the player(s) that had the most yards rushed for a loss.\nAnswer:\n')
 #anser to question
+MostYrdsRushedForLoss()
+
 print('\n\n')
 
 print('Find the player(s) that had the most rushes for a loss.\nAnswer:\n')
 #anser to question
+MostRushesForLoss()
+
 print('\n\n')
 
 print('Find the player(s) with the most number of passes for a loss.\nAnswer:\n')
 #anser to question
+MostPassesForLoss()
+
 print('\n\n')
 
 print('Find the team with the most penalties.\nAnswer:\n')
 #anser to question
+TeamMostPenalties()
+
 print('\n\n')
 
 print('Find the team with the most yards in penalties.\nAnswer:\n')
 #anser to question
-print('\n\n')
+TeamMostYrdsPenalties()
 
-print('Find the correlation between most penalized teams and games won / lost.\nAnswer:\n')
-#anser to question
 print('\n\n')
 
 print('Average number of plays in a game.\nAnswer:\n')
 #anser to question
+AvgPlaysPerGame()
+
+
 print('\n\n')
 
 print('Longest field goal.\nAnswer:\n')
 #anser to question
+LongestFG()
+
+
 print('\n\n')
 
 print('Most field goals.\nAnswer:\n')
 #anser to question
+MostFG()
+
+
 print('\n\n')
 
 print('Most missed field goals.\nAnswer:\n')
 #anser to question
+MostFailedFG()
 print('\n\n')
 
 print('Most dropped passes\nAnswer:\n')
 #anser to question
+MostDroppedPasses()
 print('\n\n')

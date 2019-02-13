@@ -85,7 +85,39 @@ def MostTeams():
 # Returns: 
 #    it prints the name and the number of the teams played for in a year
 def MostTeamsYR():
-    pass
+        playerdata = {}
+        list1 = []
+        for x in range(2009,2019):
+            f = open("REG %s.txt"%(str(x)),"r")
+            for line in f:
+                id = line.strip('\n')
+                list1.append(id)
+            f.close()
+        for x in range(0,len(list1)):
+            data = openFileJson(list1[x])
+            for gameid,gamedata in data.items():
+                    if gameid != "nextupdate":
+                        for driveid,drivedata in gamedata['drives'].items():
+                            if driveid != 'crntdrv':
+                                for playid,playdata in drivedata['plays'].items():
+                                    for playerid,player in playdata['players'].items():
+                                        for playerinfo in player:
+                                            if(not(playerinfo['playerName'] in playerdata.keys())):
+                                                playerdata[playerinfo['playerName']] = {}
+                                                playerdata[playerinfo['playerName']]['Teamsplayedfor'] = []
+                                            if(not(playerinfo['clubcode'] in playerdata[playerinfo['playerName']]['Teamsplayedfor'])):
+                                                playerdata[playerinfo['playerName']]['Teamsplayedfor'].append(playerinfo['clubcode'])
+
+        mostteams = ''
+        numberofmost = 0
+        for k,v in playerdata.items():
+            for i,x in v.items():
+                    if(len(x) > numberofmost and len(x) != 32):
+                        numberofmost = len(x)
+                        mostteams = k
+
+        total = mostteams + " " + str(numberofmost)
+        print(total + " teams")
 ##############################################################
 # MostYrdsRushedForLoss()
 # This function goes through all the information in the json file
@@ -501,6 +533,7 @@ print('\n\n')
 
 print('Find the player(s) that played for multiple teams in one year.\nAnswer:\n')
 #anser to question
+MostTeamsYR()
 
 print('\n\n')
 

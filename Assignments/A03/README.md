@@ -1,6 +1,6 @@
-1.) Run Scrape_Game_Ids.py \n
-2.) Run Scrape_Data.py \n
-3.) Run Calculate_stats.py \n
+1.) Run Scrape_Game_Ids.py /n
+2.) Run Scrape_Data.py /n
+3.) Run Calculate_stats.py /n
 
 
 All files will be stored in local directory. (documents folder)

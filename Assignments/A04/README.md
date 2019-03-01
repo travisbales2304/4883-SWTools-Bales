@@ -5,8 +5,8 @@ Project Overview:
   
  
 Files:
-  1.)Question1.php
-  2.)Question2.php
+  Question1.php\
+  Question2.php
   Question3.php
   Question4.php
   Question5.php

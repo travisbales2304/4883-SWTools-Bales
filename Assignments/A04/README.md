@@ -1,7 +1,7 @@
 Project Overview:\
   This program takes the data that was scraped from nfl.com and put onto a SQL server.\
   The goal of this program is to use sql queries to get information similar to the previous program\
-  This program will get the answers much quicker and easier than the previous program\
+  This program will get the answers much quicker and easier than the previous program
   
  
 Files:\
@@ -17,9 +17,9 @@ Files:\
   Question10.php\
   Question11.php
   
-  A04.php - This is the combined file that outputs only the first question\
+  A04.php - This is the combined file that outputs only the first question
   
-  Each question has it's own php file because I could not get it to output all of the questions\
+  Each question has it's own php file because I could not get it to output all of the questions
   
   
  Instructions:\

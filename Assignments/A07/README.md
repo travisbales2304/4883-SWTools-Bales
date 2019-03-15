@@ -1,4 +1,5 @@
 Description:
+  
   With this assignment I created a python program that will allow the user to select a folder and compare an image within that folder with the rest of the images within that folder. The program will then show the cloest image in comparison to the image the user selected and show them both on the screen
 
 

@@ -1,3 +1,14 @@
+"""
+Course: cmps 4883
+Assignemt: A07
+Date: 3/14/19
+Github username: travisbales2304
+Repo url: https://github.com/travisbales2304/4883-SWTools-Bales
+Name: Travis Bales
+Description: 
+	Loop through a folder of files and compares a single image of your choice to the rest inside and
+	shows the closest image to that image within the folder
+"""
 # import the necessary packages
 from skimage.measure import compare_ssim as ssim
 from skimage.transform import resize

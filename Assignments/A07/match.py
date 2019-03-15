@@ -53,14 +53,15 @@ def compare_images(imageA, imageB, title, currentssim):
 
 
 
-
+#loops though the folder given and gets all images resizes them if needed and compares them with
+#the image you want to compare with
 for image_path in os.listdir(path):
 	im2comp = cv2.imread(path + image_path)
 	im2comp = cv2.cvtColor(im2comp, cv2.COLOR_BGR2GRAY)
 	im2comp = cv2.resize(im2comp,dsize=(64,64), interpolation=cv2.INTER_CUBIC)
 	compare_images(comparing_image,im2comp,"compared", closest_image_number)
 
-
+#Everything below will show both the closest image and the image it's comparing to
 title = "Closest image"
 fig = plt.figure(title)
 plt.suptitle("SSIM: %.2f" % (closest_image_number))

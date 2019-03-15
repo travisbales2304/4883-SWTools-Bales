@@ -1,3 +1,5 @@
 Command line usage:
-
-match.py --folder "Type name of folder in working dir here without the quotation marks" --image "Name of image here +.png without quotes"
+1. input: name of python file
+2. input: --folder "Name of folder in working dir without quotation marks"
+3. input: --image "Name of image in the folder +.png without quotes"
+4. Example: match.py --folder emojis --image boom.png

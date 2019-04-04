@@ -1,3 +1,11 @@
+"""
+Course: cmps 4883
+Assignemt: A08
+Date: 4/04/19
+Github username: travisbales2304
+Repo url: https://github.com/travisbales2304/4883-SWTools-Bales
+Name: Travis Bales
+"""
 from PIL import Image
 import cv2
 import numpy as np

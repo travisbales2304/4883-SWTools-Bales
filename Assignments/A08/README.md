@@ -4,8 +4,11 @@ Project Description:
   
   
  How to run:
+ 
   1.)have the Emojis file in working directory
+  
   2.)Run the preprocess.py file
+  
   3.)run mosaic.py file
   
   

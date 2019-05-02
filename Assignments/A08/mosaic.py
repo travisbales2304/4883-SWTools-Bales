@@ -65,8 +65,6 @@ def getclosest(red,green,blue,x,y,w,h):
     im = resize(im,w)
     newImg.paste(im,(x*w,y*h),im)
 
-    #print(closestemoji,closestdistance)
-
 
 
 # construct the argument parse and parse the arguments
@@ -75,6 +73,8 @@ ap.add_argument("-f", "--folder", required=True,
 	help="folder of images to create mosaic with")
 ap.add_argument("-r","--size", required=True,
     help="size of emojis to create picture with")
+ap.add_argument('-p','--sizeoforiginal', required=True,
+    help="size of original picture to create mosaic with")
 ap.add_argument("-s", "--image", required=True,
 	help="image to create a mosaic out of")
 args = vars(ap.parse_args())
@@ -86,8 +86,7 @@ path = args["folder"] + "/"
 
 #import starting picture
 im = Image.open(args['image'])
-#im = Image.open('Emojis/8ball.png').convert("RGBA")
-im = resize(im,60)
+im = resize(im,int(args['sizeoforiginal']))
 im.show()
 pixels = im.load()
 w,h = im.size

@@ -18,3 +18,7 @@ Project Description:
     2.) second argument is the image you will create the mosaic out of. ex: "--image PICTURENAME.png"
     3.) third argument is the size of the emojis that will replace the picture. ex: "--size 16"
     4.) fouth is the size of the original photo to create the mosaic. ex: "--sizeoforiginal 160"
+    
+   example command:
+   
+   mosaic.py --folder Emojis --image 8ball.png --size 16 --sizeoforiginal 160

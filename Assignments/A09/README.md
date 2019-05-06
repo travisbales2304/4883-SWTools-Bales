@@ -1,5 +1,4 @@
-Goal: create a discord bot that can read more code lines to do commands.
-this will also play the morse code back to the listening party as well as sending back the text form decoded
+Goal: create a discord bot that can open and edit pictures with friends and output the results
 
--takes a command and seconds it and sends it back
--plays the Morse code to listeners
+-takes a command and does a specific funtion with that commands
+-outputs edited pictures 
